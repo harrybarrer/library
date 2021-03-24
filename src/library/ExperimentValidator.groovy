@@ -13,7 +13,7 @@ class ExperimentValidator {
 
     String getDiff() {
 
-        /*
+
         def sout = new StringBuilder(), serr = new StringBuilder()
         //arc export --revision D335558 --unified
         //arc export --revision D688426 --unified
@@ -27,15 +27,16 @@ class ExperimentValidator {
         proc.waitForOrKill(5000)
         return sout
         println "out> $sout\nerr> $serr"
-        */
 
-        diff = sh (
+
+        /*diff = sh (
                 script: """
                         arc export --revision D335558 --unified
                         """,
                 returnStdout: true
         ).trim()
         return diff
+        */
     }
 
 }
