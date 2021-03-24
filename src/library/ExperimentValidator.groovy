@@ -2,8 +2,9 @@ package library
 
 class ExperimentValidator {
 
-    public void validateExperiments() {
-        println("Validating experiments v1")
+    String validateExperiments() {
+        println("Validatin experiments - class - v1")
+        //return "Validatin experiments - class - v1"
     }
 
 }
